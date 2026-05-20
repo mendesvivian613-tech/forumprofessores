@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fórum do Professor</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f5f7fb;
+}
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+background:white;
+box-shadow:0 8px 25px rgba(0,0,0,0.05);
+}
+
+.logo{
+font-size:24px;
+font-weight:700;
+color:#2563eb;
+}
+
+.menu{
+display:flex;
+gap:20px;
+}
+
+.menu a{
+text-decoration:none;
+color:#2563eb;
+}
+
+/* HERO */
+
+.hero{
+max-width:1200px;
+margin:40px auto;
+padding:80px 60px;
+border-radius:35px;
+
+background:linear-gradient(
+180deg,
+#001b6b 0%,
+#003d8f 35%,
+#00779a 70%,
+#008b8b 100%
+);
+
+color:white;
+}
+
+.hero h1{
+font-size:58px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:20px;
+opacity:0.9;
+}
+
+/* CONTAINER */
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:20px;
+}
+
+/* CARD */
+
+.card{
+background:white;
+padding:28px;
+border-radius:25px;
+margin-bottom:20px;
+box-shadow:0 20px 40px rgba(0,0,0,0.06);
+}
+
+.card h2{
+margin-bottom:10px;
+}
+
+.pergunta{
+color:#334155;
+margin-bottom:20px;
+}
+
+/* BUTTON */
+
+.btn{
+border:none;
+padding:12px 22px;
+border-radius:14px;
+background:linear-gradient(135deg,#2563eb,#3b82f6);
+color:white;
+cursor:pointer;
+font-weight:600;
+margin-bottom:20px;
+}
+
+/* RESPOSTA */
+
+.resposta{
+background:#eff6ff;
+padding:18px;
+border-radius:16px;
+color:#1e3a8a;
+line-height:28px;
+}
+
+/* FOOTER */
+
+.footer{
+margin-top:60px;
+padding:30px 0;
+text-align:center;
+background:white;
+}
+
+.footer-line{
+width:80%;
+max-width:900px;
+height:1px;
+background:linear-gradient(to right, transparent, #6c63ff, transparent);
+margin:0 auto 20px;
+}
+
+.footer p{
+color:#7a7a9d;
+font-size:14px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+
+<div class="logo">
+Study Community
+</div>
+
+<div class="menu">
+<a href="professor.html">Painel</a>
+<a href="#">Turmas</a>
+<a href="#">Atividades</a>
+<a href="#">Perfil</a>
+</div>
+
+</div>
+
+<div class="hero">
+
+<h1>Fórum dos Professores</h1>
+
+<p>
+Responda dúvidas, acompanhe perguntas frequentes e ajude seus alunos.
+</p>
+
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<h2>❓ Como fazer site responsivo?</h2>
+
+<p class="pergunta">
+Aluno perguntou como adaptar o site para celular.
+</p>
+
+<button class="btn">
+Responder
+</button>
+
+<div class="resposta">
+✅ Resposta enviada: Utilize media queries e flexbox para adaptar os elementos.
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>❓ O que é cadeia de suprimentos?</h2>
+
+<p class="pergunta">
+Aluno possui dúvidas em logística.
+</p>
+
+<button class="btn">
+Responder
+</button>
+
+<div class="resposta">
+✅ Resposta enviada: É o processo desde a produção até a entrega do produto.
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>❓ Qual a diferença entre HTML e CSS?</h2>
+
+<p class="pergunta">
+Pergunta frequente dos alunos iniciantes.
+</p>
+
+<button class="btn">
+Responder
+</button>
+
+<div class="resposta">
+✅ Resposta enviada: HTML cria a estrutura e CSS estiliza a página.
+</div>
+
+</div>
+
+</div>
+
+<footer class="footer">
+<div class="footer-line"></div>
+<p>Study Community ✦ Aprenda, compartilhe e evolua</p>
+</footer>
+
+</body>
+</html>
