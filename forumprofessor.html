@@ -4,149 +4,213 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Fórum do Professor</title>
+<title>Study Community - Fórum </title>
+
+<link rel="icon" type="image/png" href="img/favicon.jpg">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#f5f7fb;
+    background:#f5f7fb;
+    color:#0f172a;
 }
 
 /* NAVBAR */
 
 .navbar{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 40px;
-background:white;
-box-shadow:0 8px 25px rgba(0,0,0,0.05);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+    background:white;
+    box-shadow:0 8px 25px rgba(0,0,0,0.05);
 }
 
 .logo{
-font-size:24px;
-font-weight:700;
-color:#2563eb;
+    color:#2563eb;
+    font-size:24px;
+    font-weight:700;
 }
 
 .menu{
-display:flex;
-gap:20px;
+    display:flex;
+    gap:22px;
 }
 
 .menu a{
-text-decoration:none;
-color:#2563eb;
+    text-decoration:none;
+    color:#2563eb;
+    font-weight:500;
 }
 
-/* HERO */
-
-.hero{
-max-width:1200px;
-margin:40px auto;
-padding:80px 60px;
-border-radius:35px;
-
-background:linear-gradient(
-180deg,
-#001b6b 0%,
-#003d8f 35%,
-#00779a 70%,
-#008b8b 100%
-);
-
-color:white;
-}
-
-.hero h1{
-font-size:58px;
-margin-bottom:15px;
-}
-
-.hero p{
-font-size:20px;
-opacity:0.9;
+.menu a:hover{
+    color:#1d4ed8;
 }
 
 /* CONTAINER */
 
 .container{
-max-width:1100px;
-margin:auto;
-padding:20px;
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
 }
 
-/* CARD */
+/* BANNER */
 
-.card{
-background:white;
-padding:28px;
-border-radius:25px;
-margin-bottom:20px;
-box-shadow:0 20px 40px rgba(0,0,0,0.06);
+.banner-professor{
+    background:linear-gradient(
+    180deg,
+    #18256f 0%,
+    #1e3a8a 45%,
+    #2f8cab 100%
+    );
+
+    color:white;
+
+    padding:70px;
+    border-radius:35px;
+
+    margin-bottom:45px;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.15);
 }
 
-.card h2{
-margin-bottom:10px;
+.banner-professor h1{
+    font-size:55px;
+    margin-bottom:15px;
 }
 
-.pergunta{
-color:#334155;
-margin-bottom:20px;
+.banner-professor p{
+    font-size:18px;
+    opacity:.9;
+    max-width:700px;
 }
 
-/* BUTTON */
+/* TITULOS */
 
-.btn{
-border:none;
-padding:12px 22px;
-border-radius:14px;
-background:linear-gradient(135deg,#2563eb,#3b82f6);
-color:white;
-cursor:pointer;
-font-weight:600;
-margin-bottom:20px;
+.section-title{
+    font-size:28px;
+    margin-bottom:25px;
 }
 
-/* RESPOSTA */
+/* CARDS */
+
+.pergunta-card{
+
+    background:white;
+
+    border-radius:30px;
+
+    padding:35px;
+
+    margin-bottom:25px;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.05),
+    0 25px 70px rgba(0,0,0,.08);
+
+    transition:.35s;
+}
+
+.pergunta-card:hover{
+
+    transform:
+    translateY(-8px);
+
+    box-shadow:
+    0 25px 60px rgba(0,0,0,.10),
+    0 35px 100px rgba(0,0,0,.12);
+}
+
+.pergunta-card h2{
+    margin-bottom:10px;
+}
+
+.pergunta-card p{
+    color:#64748b;
+    margin-bottom:20px;
+}
+
+/* BOTÃO */
+
+.btn-responder{
+
+    border:none;
+
+    padding:14px 28px;
+
+    border-radius:16px;
+
+    background:linear-gradient(
+    135deg,
+    #2563eb,
+    #3b82f6
+    );
+
+    color:white;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.btn-responder:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:
+    0 15px 35px rgba(37,99,235,.35);
+}
+
+/* RESPOSTAS */
 
 .resposta{
-background:#eff6ff;
-padding:18px;
-border-radius:16px;
-color:#1e3a8a;
-line-height:28px;
+
+    margin-top:20px;
+
+    background:#eef5ff;
+
+    border-radius:20px;
+
+    padding:20px;
+
+    color:#1e40af;
+
+    border-left:5px solid #2563eb;
 }
 
 /* FOOTER */
 
 .footer{
-margin-top:60px;
-padding:30px 0;
-text-align:center;
-background:white;
+    margin-top:60px;
+    padding:30px 0;
+    text-align:center;
+    background:white;
 }
 
 .footer-line{
-width:80%;
-max-width:900px;
-height:1px;
-background:linear-gradient(to right, transparent, #6c63ff, transparent);
-margin:0 auto 20px;
+    width:80%;
+    max-width:900px;
+    height:1px;
+    background:linear-gradient(to right,transparent,#6c63ff,transparent);
+    margin:0 auto 20px;
 }
 
 .footer p{
-color:#7a7a9d;
-font-size:14px;
+    color:#7a7a9d;
+    font-size:14px;
+    letter-spacing:1px;
 }
 
 </style>
@@ -156,90 +220,126 @@ font-size:14px;
 
 <div class="navbar">
 
-<div class="logo">
-Study Community
-</div>
+    <div class="logo">
+        Study Community
+    </div>
 
-<div class="menu">
-<a href="professor.html">Painel</a>
-<a href="#">Turmas</a>
-<a href="#">Atividades</a>
-<a href="#">Perfil</a>
-</div>
-
-</div>
-
-<div class="hero">
-
-<h1>Fórum dos Professores</h1>
-
-<p>
-Responda dúvidas, acompanhe perguntas frequentes e ajude seus alunos.
-</p>
+    <div class="menu">
+        <a href="indexprofessor.html">Início</a>
+        <a href="forumprofessor.html">Fórum</a>
+        <a href="turmas.html">Turmas</a>
+        <a href="mi">Atividades</a>
+        <a href="missaoprofessor.html">Missão</a>
+        <a href="#">Perfil</a>
+      </div>
 
 </div>
 
 <div class="container">
 
-<div class="card">
+    <div class="banner-professor">
 
-<h2>❓ Como fazer site responsivo?</h2>
+        <h1>💬 Fórum dos Professores</h1>
 
-<p class="pergunta">
-Aluno perguntou como adaptar o site para celular.
-</p>
+        <p>
+            Visualize as dúvidas mais frequentes dos alunos,
+            responda perguntas e acompanhe as discussões da comunidade.
+        </p>
 
-<button class="btn">
-Responder
-</button>
+    </div>
 
-<div class="resposta">
-✅ Resposta enviada: Utilize media queries e flexbox para adaptar os elementos.
-</div>
+    <h2 class="section-title">🔥 Perguntas aguardando resposta</h2>
 
-</div>
+    <div class="pergunta-card">
+        <h2>❓ Como fazer site responsivo?</h2>
+        <p>Aluno da turma de HTML & CSS.</p>
+        <button class="btn-responder">Responder</button>
+    </div>
 
-<div class="card">
+    <div class="pergunta-card">
+        <h2>❓ Qual a diferença entre HTML e CSS?</h2>
+        <p>Pergunta enviada há 10 minutos.</p>
+        <button class="btn-responder">Responder</button>
+    </div>
 
-<h2>❓ O que é cadeia de suprimentos?</h2>
+    <div class="pergunta-card">
+        <h2>❓ O que é JavaScript?</h2>
+        <p>Dúvida de aluno iniciante.</p>
+        <button class="btn-responder">Responder</button>
+    </div>
 
-<p class="pergunta">
-Aluno possui dúvidas em logística.
-</p>
+    <div class="pergunta-card">
+        <h2>❓ O que é cadeia de suprimentos?</h2>
+        <p>Pergunta da turma de Logística.</p>
+        <button class="btn-responder">Responder</button>
+    </div>
 
-<button class="btn">
-Responder
-</button>
+    <div class="pergunta-card">
+        <h2>❓ Como reduzir custos logísticos?</h2>
+        <p>Dúvida frequente dos alunos.</p>
+        <button class="btn-responder">Responder</button>
+    </div>
 
-<div class="resposta">
-✅ Resposta enviada: É o processo desde a produção até a entrega do produto.
-</div>
+    <div class="pergunta-card">
+        <h2>❓ Como controlar estoque corretamente?</h2>
+        <p>Pergunta enviada hoje.</p>
+        <button class="btn-responder">Responder</button>
+    </div>
 
-</div>
+    <h2 class="section-title" style="margin-top:60px;">
+        ✅ Respostas já publicadas
+    </h2>
 
-<div class="card">
+    <div class="pergunta-card">
 
-<h2>❓ Qual a diferença entre HTML e CSS?</h2>
+        <h2>Como usar Flexbox?</h2>
 
-<p class="pergunta">
-Pergunta frequente dos alunos iniciantes.
-</p>
+        <div class="resposta">
+            Flexbox é uma ferramenta do CSS utilizada para alinhar, distribuir e organizar elementos de forma simples e responsiva.
+        </div>
 
-<button class="btn">
-Responder
-</button>
+    </div>
 
-<div class="resposta">
-✅ Resposta enviada: HTML cria a estrutura e CSS estiliza a página.
-</div>
+    <div class="pergunta-card">
 
-</div>
+        <h2>O que é UX e UI?</h2>
+
+        <div class="resposta">
+            UX representa a experiência do usuário. UI representa a interface visual do sistema.
+        </div>
+
+    </div>
+
+    <div class="pergunta-card">
+
+        <h2>Front-end ou Back-end?</h2>
+
+        <div class="resposta">
+            Front-end é a parte visual que o usuário vê. Back-end é a lógica, banco de dados e funcionamento interno.
+        </div>
+
+    </div>
+
+    <div class="pergunta-card">
+
+        <h2>Como criar missões semanais?</h2>
+
+        <div class="resposta">
+            Defina uma meta, prazo de conclusão e uma recompensa para incentivar os alunos a manterem a ofensiva ativa.
+        </div>
+
+    </div>
 
 </div>
 
 <footer class="footer">
-<div class="footer-line"></div>
-<p>Study Community ✦ Aprenda, compartilhe e evolua</p>
+
+    <div class="footer-line"></div>
+
+    <p>
+        Study Community ✦ Aprenda, compartilhe e evolua
+    </p>
+
 </footer>
 
 </body>
